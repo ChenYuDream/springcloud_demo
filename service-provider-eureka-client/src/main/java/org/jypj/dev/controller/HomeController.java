@@ -19,7 +19,7 @@ public class HomeController {
      * @param name
      * @return
      */
-    @RequestMapping("/hi")
+    @RequestMapping("/hi1")
     public String home(@RequestParam String name) {
         return "hi " + name + ",i am from port:" + port;
     }

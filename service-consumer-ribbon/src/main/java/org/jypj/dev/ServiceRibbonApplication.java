@@ -26,7 +26,6 @@ public class ServiceRibbonApplication {
     }
 
     @Bean
-    @LoadBalanced
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
