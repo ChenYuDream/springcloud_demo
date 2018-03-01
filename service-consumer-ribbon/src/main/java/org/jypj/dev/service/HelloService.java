@@ -19,17 +19,11 @@ public class HelloService {
      * @param name
      * @return
      */
-    @HystrixCommand(fallbackMethod = "hiError")
-    public String hiService(String name) {
+    public String hi1Service(String name) {
         return restTemplate.getForObject("http://SERVICE-HI/hi1?name=" + name, String.class);
     }
 
-    /**
-     * 如果调用的方法失败会调用此熔断器，相当于是一个回调方法
-     * @param name
-     * @return
-     */
-    public String hiError(String name) {
-        return "hi," + name + ",sorry,error!";
+    public String hi2Service(String name) {
+        return restTemplate.getForObject("http://service-hi/hi2?name=" + name, String.class);
     }
 }

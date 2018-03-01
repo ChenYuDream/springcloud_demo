@@ -11,7 +11,8 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 /**
  * @author ChenYu
  */
-@EnableEurekaClient
+@EnableHystrix
+@EnableFeignClients
 @SpringBootApplication
 public class ServiceFeignApplication {
 

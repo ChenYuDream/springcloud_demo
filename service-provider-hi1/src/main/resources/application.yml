@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://peer1:8761/eureka,http://peer2:8769/eureka
 server:
-  port: 8765
+  port: 8772
 spring:
   application:
-    name: service-feign
+    name: service-hi
